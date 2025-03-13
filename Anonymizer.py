@@ -12,7 +12,7 @@ LEFT_EYE_LANDMARKS = [263, 362, 385, 387, 373, 380, 33, 133, 160, 158, 153, 144]
 # Iniciar la captura de video
 cap = cv2.VideoCapture(0)
 with mp_face_mesh.FaceMesh(
-    max_num_faces=10,
+    max_num_faces=1,
     refine_landmarks=True,
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5) as face_mesh:
